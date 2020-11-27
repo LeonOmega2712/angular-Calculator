@@ -1,0 +1,52 @@
+<div>
+  <div class="row">
+    <div class="column2">
+      <input type="number" placeholder="Numero 1" value="{{num1}}" #num1 />
+    </div>
+    <div class="column2">
+      <input type="number" placeholder="Numero 2" value="{{num2}}" #num2 />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column4">
+      <input
+        type="button"
+        value="+"
+        class="botones"
+        (click)="sumatela(num1.value, num2.value)"
+      />
+    </div>
+    <div class="column4">
+      <input
+        type="button"
+        value="-"
+        class="botones"
+        (click)="restar(num1.value, num2.value)"
+      />
+    </div>
+    <div class="column4">
+      <input
+        type="button"
+        value="×"
+        class="botones"
+        (click)="multiplicar(num1.value, num2.value)"
+      />
+    </div>
+    <div class="column4">
+      <input
+        type="button"
+        value="÷"
+        class="botones"
+        (click)="dividir(num1.value, num2.value)"
+      />
+    </div>
+  </div>
+
+  <div *ngIf="operacion" class="centrado">
+    Resultado {{operacion}}:
+    <p>{{resultado}}</p>
+  </div>
+
+  <app-resultado></app-resultado>
+</div>

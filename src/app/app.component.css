@@ -1,0 +1,50 @@
+div {
+  font-family: Roboto;
+}
+
+.botones {
+  margin: 5px;
+  box-shadow: inset 2px 1px 0px 0px #54a3f7;
+  background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color: #007dc1;
+  border-radius: 30px;
+  border: 1px solid #124d77;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  width: 100%;
+}
+
+.botones:hover {
+  background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  background-color: #0061a7;
+}
+.botones:active {
+  position: relative;
+  top: 1px;
+}
+
+input {
+  box-shadow: inset 1px 1px 1px 1px #54a3f7;
+  border-radius: 30px;
+  border: 1px #124d77;
+  font-family: Roboto;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+.column4 {
+  float: left;
+  width: 20%;
+  padding: 1px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
